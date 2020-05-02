@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1016</width>
+    <height>610</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Email</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>E-mail Title</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="emailTitle"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="emailContent">
+      <property name="placeholderText">
+       <string>write your e-mail here!</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1016</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="emailListDock">
+   <property name="windowTitle">
+    <string>EmailList</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="emailListDockContents">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTreeWidget" name="emailTree">
+       <property name="headerHidden">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="detailDock">
+   <property name="windowTitle">
+    <string>Detail</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="detailDockContents">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="rALineEdit">
+       <property name="text">
+        <string>chenhaoyuan981215@163.com</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="sPLineEdit">
+       <property name="text">
+        <string>yaxfycdaufzdbffi</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelSenderPswd">
+       <property name="text">
+        <string>E-mail password</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelReceiverAddr">
+       <property name="text">
+        <string>target E-mail</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelSenderAddr">
+       <property name="text">
+        <string>your E-mail</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="sALineEdit">
+       <property name="text">
+        <string>1065619715@qq.com</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>rALineEdit</zorder>
+    <zorder>sPLineEdit</zorder>
+    <zorder>labelSenderPswd</zorder>
+    <zorder>labelReceiverAddr</zorder>
+    <zorder>sALineEdit</zorder>
+    <zorder>labelSenderAddr</zorder>
+   </widget>
+  </widget>
+  <zorder>emailListDock</zorder>
+  <zorder>detailDock</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
